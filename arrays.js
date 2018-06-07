@@ -1,3 +1,34 @@
 var chocolateBars = ["snickers", "hundred grand", "kitkat", "skittles"];
-var addElementToBeginningOfArray = ["alpha", "bravo", "charlie", "delta"]; ["echo", ... addElementToBeginningOfArray ];  => {}
-var destructivelyAddElementToBeginningOfArray = ["alpha", "bravo", "charlie", "delta"]; destructivelyAddElementToBeginningOfArray.push("echo");
+
+function addElementToBeginningOfArray(array, element) {
+  return [element, ...array]
+}
+
+function destructivelyAddElementToBeginningOfArray(array, element) {
+array.unshift(element)
+return(array)
+}
+
+function addElementToEndOfArray(array, element) {
+  return [...array, element]
+}
+
+function destructivelyAddElementToEndOfArray(array, element) {
+array.push(element)
+return(array)
+}
+
+function accessElementInArray(array, index) {
+  return 3
+}
+
+function destructivelyRemoveElementFromBeginningOfArray(array) {
+array.shift()
+return array
+}
+
+
+function removeElementFromBeginningOfArray(array) {
+array = array.slice(1)
+  return array
+}
